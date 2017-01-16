@@ -13,8 +13,8 @@ body {
   margin: 0;
   padding: 10px;
   width: 250px;
-  top: 10em;
-  left: 30%;
+  top: 5em;
+  left: 50%;
 
   background-color: #fff;
   border-radius: 4px;
@@ -24,24 +24,30 @@ body {
 .polaroid > img {
   display: block;
   width: 100%;
+  position: relative;
 }
 
 .polaroid > figcaption {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
+  position: absolute;
+  left: 80px;
+  top: 125px;
 }
 
 figure:first-child {
   transform: rotate(-10deg);
-  left: 5em;
+  left: 15%;
 }
 
 figure:nth-last-child(2) {
   transform: rotate(5deg);
-  top: 12em;
+  left: 15%;
+  top: 100px;
+  z-index: 100;
 }
 
 figure:last-child {
   transform: rotate(30deg);
-  left: 18em;
+  left: 48%;
 }
