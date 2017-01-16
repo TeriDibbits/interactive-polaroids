@@ -31,6 +31,17 @@ body {
   text-shadow: 1px 1px 3px #000;
 }
 
-.body:first-child {
-  transform: rotate(-15%);
+figure:first-child {
+  transform: rotate(-10deg);
+  left: 5em;
+}
+
+figure:nth-last-child(2) {
+  transform: rotate(5deg);
+  top: 12em;
+}
+
+figure:last-child {
+  transform: rotate(30deg);
+  left: 18em;
 }
