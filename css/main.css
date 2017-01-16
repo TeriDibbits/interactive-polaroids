@@ -19,6 +19,13 @@ body {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
+  transition: all 400ms linear;
+}
+
+.polaroid:hover {
+  z-index: 200;
+  transform: rotate(0deg);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 1);
 }
 
 .polaroid > img {
@@ -36,18 +43,20 @@ body {
 }
 
 figure:first-child {
-  transform: rotate(-10deg);
-  left: 15%;
+  transform: rotate(-12deg);
+  left: 20%;
+  top: 100px;
 }
 
 figure:nth-last-child(2) {
   transform: rotate(5deg);
-  left: 15%;
-  top: 100px;
+  left: 30%;
+  top: 150px;
   z-index: 100;
 }
 
 figure:last-child {
-  transform: rotate(30deg);
-  left: 48%;
+  transform: rotate(33deg);
+  left: 40%;
+  top: 100px;
 }
